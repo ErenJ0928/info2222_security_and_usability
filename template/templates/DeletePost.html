@@ -1,0 +1,58 @@
+
+<style>
+.box{
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #7FE83A;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.box h1{
+    color: #888972;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type="text"],.box input[type="password"]{
+  border-radius: 24px;
+  border: 2px solid #3498dc;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  transition: 0.25s;
+}
+.box input[type="submit"]{
+  border-radius: 24px;
+  border: 2px solid #2ecc70;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  transition: 0.25s;
+  cursor: pointer;
+}
+</style>
+
+<body>
+
+<p>
+<form class="box" action="/DeletePost" method="post">
+    <h1>Delete Course Guide</h1>
+    <h2>Write the Post ID</h2>
+    <input name="ID" type="text" placeholder="ID" />
+</br>
+    <input value="submit" type="submit" />
+</form>
+</p>
+</center>
+</body>

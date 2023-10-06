@@ -1,0 +1,36 @@
+<head>
+<link rel="stylesheet" type="text/css" href="css/temp.css">
+<!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/pure.css') }}">-->
+<!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">-->
+<script src="js/script_head.js"></script>
+
+<title>Already Login</title>
+</head>
+
+<body>
+
+    <div id="header" style = "background-color: #CEC2E8" class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item" style = "background-color: #E8673A"><a href="/home" class="pure-menu-link">Home</a ></li>
+
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover" >
+                        <a href="#" style = "background-color: #E8DB3A" id="menuLink1" class="pure-menu-link">📖 Change Post</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item" style = "background-color: #E8DB3A"><a href="postSearch" class="pure-menu-link">All Post</a></li>
+                            <li class="pure-menu-item" style = "background-color: #E8DB3A"><a href="DeletePost" class="pure-menu-link">Delete Post</a></li>
+                        </ul>
+                 </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="#" style = "background-color: #7FE83A" id="menuLink2" class="pure-menu-link">👥 Change User</a >
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item" style = "background-color: #7FE83A"><a href="UserList" class="pure-menu-link">All User</a></li>
+                            <li class="pure-menu-item" style = "background-color: #7FE83A"><a href="DeleteUser" class="pure-menu-link">Delete User</a></li>
+                            <li class="pure-menu-item" style = "background-color: #7FE83A"><a href="HelpUser" class="pure-menu-link">Help From User</a></li>
+                        </ul>
+                 </li>
+
+                <li class="pure-menu-item" style = "background-color: #3A77E8"><a href="/signOut" class="pure-menu-link">LogOut</a></li>
+            </ul>
+    </div>
+
+</body>

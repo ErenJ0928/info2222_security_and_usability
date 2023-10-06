@@ -1,0 +1,21 @@
+<body>
+    <h1 align="center" class="page-title">🫂 All User List</h1>
+    <table border="1" align="center" class="pure-table pure-table-striped">
+        <thead>
+            <tr><th>User name</th></tr>
+        </thead>
+        <tbody>
+            <script>
+              var data = ${units};
+              for (var i = 0; i < data.length; i++) {
+                document.write(`
+                  <tr>
+                    <td>${data[i]}</td>
+                  </tr>
+                `);
+              }
+            </script>
+        </tbody>
+    </table>
+
+</body>

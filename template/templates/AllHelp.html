@@ -1,0 +1,94 @@
+<style>
+    .projectList{
+      padding-top: 20px;
+    }
+    .projectList .item{
+
+    }
+    .projectList .item .time{
+      background-color: #bbbbbb;
+      color: #ffffff;
+      height: 26px;
+      width: 150px;
+      text-align: center;
+      border-radius:13px;
+      margin: 0 auto;
+    }
+    .projectList .item .content{
+      margin-top: 10px;
+      /* height: 130px; */
+      width: 90%;
+      margin-left: 5%;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    .projectList .item .content .title{
+      display: block;
+      color: #444444;
+      font-size: 20px;
+      width: 90%;
+      font-weight: 550;
+      width: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+    .projectList .item .content .textcontent{
+      margin-top: 10px;
+      height: 60px;
+      display: block;
+      color: #666666;
+      font-size: 16px;
+      text-indent: 2em;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 5px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+    .projectList .item .content .detail{
+      margin-top: 3px;
+      height: 20px;
+      position: relative;
+    }
+    .projectList .item .content .detail .lookdetail{
+      font-size: 14px;
+      line-height: 26px;
+      color: #666666;
+    }
+    .projectList .item .content .detail .rightIcon{
+      position: absolute;
+      right: 0px;
+      top: 2px;
+    }
+
+</style>
+<body>
+  <div class="content" style="margin-bottom: 100px;padding-top: 44px;border-top: 1px solid #eeeeee;">
+    <div class="projectList" id="projectList">
+      <div class="item">
+        <script>
+              var data = ${sender};
+              var cont = ${cont}
+              for (var i = 0; i < data.length; i++) {
+                document.write(`
+                <div class="content">
+                  <div class="time">From: ${data[i]}</div>
+                  <div class="content">
+                    <div class="textcontent">${cont[i]}</div>
+                  </div>
+                  </div>
+                `);
+              }
+        </script>
+      </div>
+    </div>
+  </div>
+
+</body>
+</center>
